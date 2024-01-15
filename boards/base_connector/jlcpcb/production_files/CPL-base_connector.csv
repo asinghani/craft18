@@ -1,0 +1,10 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+R1,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,166.1,-111.76,180.0,top
+R2,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,166.1,-101.6,0.0,top
+R3,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,138.7,-111.76,180.0,top
+R4,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,138.7,-101.6,0.0,top
+R5,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.48,-92.98,90.0,top
+R6,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,147.32,-92.98,-90.0,top
+R7,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,147.32,-120.38,-90.0,top
+R8,DNF,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.48,-120.38,90.0,top
+U1,~,3x3conn,152.4,-106.68,0.0,top

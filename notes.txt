@@ -1,0 +1,54 @@
+Blocks we need to build: (LxH)
+
+4 repeaters (1x1.5)
+	- grass block with repeater on top with switch + output indicator LED in the repeater
+
+2 comparators (1x1.5)
+	- grass block with comparator on top with + 2x output indicator LEDs on the back + always-on LED in the front
+
+3 torches (2x2)
+	- 2x grass block (base) + some block (wood) + torch on the side
+
+2 redstone lamps (1x2)
+	- grass block + hollow-ish redstone lamp
+
+1 iron door (1x3)
+	- grass block + iron door on top + space for servo
+
+15 redstone dust (1x1)
+	- 3 straight 12 X
+	- grass block + redstone dust + holes for light to shine through
+
+1 button (1x1.5)
+	- grass block + up facing wooden button
+
+3 levers (1x1.5)
+	- grass block + up facing lever switch
+
+
+1 daylight sensor (1x1.5)
+	- grass block + daylight sensor texture + 9x photocell
+
+1 note block (1x2)
+	- grass block + note block + some small holes in the block for sound
+
+
+Textures we need:
+	- green grass textures (all 6 sides)
+		- make sure it matches the game, the textures in the file are inconsistent
+	- comparator textures
+	- block-side-mount torch textures
+	- redstone lamp textures
+	- iron door textures
+	- redstone dust on grass textures (note there's 2 separate textures for X axis and Y axis)
+	- redstone dust "cross" on grass textures
+	- wooden button texture
+	- lever textures
+	- daylight sensor texture
+	- note block texture
+
+
+
+
+
+

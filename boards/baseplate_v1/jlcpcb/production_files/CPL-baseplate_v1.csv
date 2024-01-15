@@ -1,0 +1,10 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+U1,~,3x3conn,111.76,-60.96,0.0,top
+U2,~,3x3conn,152.4,-60.96,0.0,top
+U3,~,3x3conn,193.04,-60.96,0.0,top
+U4,~,3x3conn,111.76,-101.6,0.0,top
+U5,~,3x3conn,152.4,-101.6,0.0,top
+U6,~,3x3conn,193.04,-101.6,0.0,top
+U7,~,3x3conn,111.76,-142.24,0.0,top
+U8,~,3x3conn,152.4,-142.24,0.0,top
+U9,~,3x3conn,193.04,-142.24,0.0,top

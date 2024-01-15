@@ -1,0 +1,12 @@
+Comment,Designator,Footprint,LCSC
+MountingHole,H2,MountingHole_2.2mm_M2,
+MountingHole,H4,MountingHole_2.2mm_M2,
+Conn_01x03,J2,connfemale,
+MountingHole,H3,MountingHole_2.2mm_M2,
+MountingHole,H1,MountingHole_2.2mm_M2,
+Conn_01x03,J1,connmale,
+SIG,TP2,TestPoint_THTPad_3.0x3.0mm_Drill1.5mm,
+R_US,R1,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
+VCC,TP1,TestPoint_THTPad_3.0x3.0mm_Drill1.5mm,
+GND,TP3,TestPoint_THTPad_3.0x3.0mm_Drill1.5mm,
+R_US,R2,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,

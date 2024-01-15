@@ -1,0 +1,4 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+J1,SOT23,TSOT-23-6_HandSoldering,156.845,-58.42,180.0,top
+J2,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,152.4,-58.42,180.0,top
+J3,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,161.29,-58.435,180.0,top
