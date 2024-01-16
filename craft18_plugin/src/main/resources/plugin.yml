@@ -1,0 +1,20 @@
+name: Craft18
+version: 0.1.0
+author: gary600
+main: xyz.gary600.craft18_plugin.Craft18Plugin
+api-version: 1.20
+
+permissions:
+  craft18.configure:
+    description: Allow configuration
+    default: true
+
+commands:
+  port:
+    description: Set a Craft18 port to the selected block
+    usage: /port [0..7]
+    permission: craft18.configure
+  serial:
+    description: Set the serial port for Craft18 interface
+    usage: /serial <port>
+    permission: craft18.configure
