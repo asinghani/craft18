@@ -10,11 +10,11 @@ import java.io.File
 class Craft18Plugin : JavaPlugin() {
     val configFile = File(dataFolder, "config.json")
 
-    var configInner: Config? = null
+    private var configInner: Config? = null
     val config: Config get() = configInner ?: Config.load().also { configInner = it }
 
     var serial: SerialPort? = null
-    var portsState: Array<Boolean> = Array(8) { false }
+    private var portsState: Array<Boolean> = Array(8) { false }
 
     init {
         if (plugin_internal != null) {

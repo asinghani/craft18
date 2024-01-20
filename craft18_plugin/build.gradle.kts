@@ -2,9 +2,9 @@ group = "xyz.gary600.craft18_plugin"
 version = "0.1.0"
 
 plugins {
-    kotlin("jvm") version "1.6.10"
-    kotlin("plugin.serialization") version "1.6.10"
-    id("com.github.johnrengelman.shadow") version "7.1.0" // needed to build a fat jar w/ dependencies included
+    kotlin("jvm") version "1.9.22"
+    kotlin("plugin.serialization") version "1.9.22"
+    id("com.github.johnrengelman.shadow") version "7.1.2" // needed to build a fat jar w/ dependencies included
     idea // IntelliJ integration
 }
 
