@@ -11,6 +11,8 @@ fill out project report form
 
 
 
+0.385 in / 5 = 0.077in
+
 
 
 btn height = 3.175mm + 2px = 7.9375mm ~= 7.9mm
