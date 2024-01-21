@@ -1,36 +1,156 @@
 Blocks we need to build: (LxH)
 
-4 repeaters (1x1.5)
-	- grass block with repeater on top with switch + output indicator LED in the repeater
 
-2 comparators (1x1.5)
-	- grass block with comparator on top with + 2x output indicator LEDs on the back + always-on LED in the front
 
-3 torches (2x2)
-	- 2x grass block (base) + some block (wood) + torch on the side
+laser cut remaining top plates / spacers
+finish soldering together base plate + arduino
 
-2 redstone lamps (1x2)
-	- grass block + hollow-ish redstone lamp
+
+
+fill out project report form
+
+
+
+
+
+btn height = 3.175mm + 2px = 7.9375mm ~= 7.9mm
+
+
+btn = 8mm x 13mm
+
+holes 5.7mm apart
+
+holes 2.8mm high
+holes 1.1mm wide
+
+
+btn profile = 
+10.3mm x 4.8mm
+
+minus 3.5mm hole on one 10.3mm side
+
+
+
+
+16px = 1.5in = 38.1mm
+
+1px = 0.09375in = 2.38125mm
+
+
+plate thickness (top of base plate to bottom of block plate):
+0.428in
+
+account for screw head diameter as well
+
+
+
+repeater torch bottom hole
+1/8" x 1/8" x 0.2in
+
+
+all on glossy paper (also get like 10 or 15 extra sheets of the glossy paper)
+
+- iron door textures: 4
+- torch side textures: 90
+- torch top textures: 30
+
+- grass side textures: 150
+- grass top textures: 10
+
+- wood textures: 30
+- cobblestone textures: 25
+- repeater top textures: 8
+- comparator top textures: 8
+- repeater/comparator side textures: 35
+
+- redstone lamp textures: 20
+
+- redstone dust X textures: 20
+- redstone dust line textures: 10
+
+- daylight sensor top textures: 2
+- daylight sensor side textures: 6
+
+
+
+
 
 1 iron door (1x3)
 	- grass block + iron door on top + space for servo
+	- need to measure out servo dimensions to figure out fit
 
-15 redstone dust (1x1)
+
+repeater slider top half (small)
+button top half (small)
+lever stone piece (small)
+
+print more torch tops
+print more 5mm diffusers
+
+
+
+daylight sensor print ring + top half
+
+
+
+
+
+5mm LED diffuser attempt (small, PETG)
+
+
+
+make 14x torch caps
+
+
+
+3 torches (2x2) ++
+	- 2x grass block (base) + some block (wood) + torch on the side
+
+
+
+
+
+5 repeaters (1x1.5) ++
+	- grass block with repeater on top with switch + output indicator LED in the repeater
+
+2 comparators (1x1.5) ++
+	- grass block with comparator on top with + 2x output indicator LEDs on the back + always-on LED in the front
+
+
+1 button (1x1.5) **** ++
+	- grass block + up facing wooden button
+	- button = 14.2875 W x 9.525 L x 4.7625 H
+		     = 6 x 
+
+3 levers (1x1.5) **** ++
+	- grass block + up facing lever switch
+	- lever base = 19.05 W x 14.2875 L x 7.14375 H
+				 = 8 x 6 x 3
+
+
+
+
+2 redstone lamps (1x2) **** ++
+	- grass block + hollow-ish redstone lamp
+	- top half printed in translucent
+	- bottom half is generic block with round hole
+
+
+1 daylight sensor (1x1.5) 
+	- grass block + daylight sensor texture + 9x photocell
+	- see solidworks file for top half
+	- bottom half is generic block with round hole
+	- height = 6px // 14.2875mm
+	- 3.5mm base test = 1.5px
+
+
+
+
+15 redstone dust (1x1)  ****
 	- 3 straight 12 X
 	- grass block + redstone dust + holes for light to shine through
 
-1 button (1x1.5)
-	- grass block + up facing wooden button
 
-3 levers (1x1.5)
-	- grass block + up facing lever switch
-
-
-1 daylight sensor (1x1.5)
-	- grass block + daylight sensor texture + 9x photocell
-
-1 note block (1x2)
-	- grass block + note block + some small holes in the block for sound
 
 
 Textures we need:
