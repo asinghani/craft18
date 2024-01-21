@@ -1,6 +1,6 @@
 # Craft18
 
-Goal: Re-create Minecraft Redstone components in the physical world using _only_ analog circuits, no microcontrollers or CPUs. Then, bridge the "physical-world" Redstone into the game using a custom plugin and Arduino USB-GPIO bridge, while maintaining the ability for "physical-world" Redstone to operate fully independently from the game as well.
+Bring Minecraft Redstone circuits to life using Craft18, our physical re-creation of the game’s “circuit” mechanics using only discrete analog components. Look ma, no microcontrollers! To build even more complex circuits, link the physical world to the virtual world using our custom game plugin and game-to-physical bridge!
 
 ![](doc/pic.jpg)
 
