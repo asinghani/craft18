@@ -2,6 +2,7 @@ package xyz.gary600.craft18_plugin
 
 import com.fazecast.jSerialComm.SerialPort
 import com.fazecast.jSerialComm.SerialPortInvalidPortException
+import org.bukkit.Bukkit
 import org.bukkit.Location
 import org.bukkit.Material
 import org.bukkit.command.Command
@@ -14,7 +15,7 @@ fun Location.coordsString() = "$blockX $blockY $blockZ"
 object PortCommand : CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         if (args.isEmpty()) {
-            for ((i, location) in Craft18Plugin.plugin.config.ports.withIndex()) {
+            for ((i, location) in Craft18Plugin.plugin.config.ports.slice(0..4).withIndex()) {
                 if (location != null) {
                     sender.sendMessage("Port $i: ${location.coordsString()}")
                 }
@@ -22,6 +23,10 @@ object PortCommand : CommandExecutor {
                     sender.sendMessage("Port $i: unconnected")
                 }
             }
+            return true
+        }
+        if (!sender.hasPermission("craft18.configure")) {
+            sender.sendMessage("Not permitted")
             return true
         }
         if (sender !is Player) {
@@ -33,7 +38,7 @@ object PortCommand : CommandExecutor {
             return true
         }
         val port = args[0].toIntOrNull()
-        if (port == null || port < 0 || port > 7) {
+        if (port == null || port < 0 || port > 4) {
             sender.sendMessage("Invalid port")
             return true
         }
@@ -47,6 +52,10 @@ object PortCommand : CommandExecutor {
                 sender.sendMessage("Expected 'clear'")
                 return true
             }
+        }
+        if (sender.world != Bukkit.getWorlds()[0]) {
+            sender.sendMessage("Must be in overworld")
+            return true
         }
         val block = sender.getTargetBlock(null, 20)
         if (block.type == Material.AIR) {
@@ -66,8 +75,17 @@ object SerialCommand : CommandExecutor {
             sender.sendMessage("Serial port: ${Craft18Plugin.plugin.serial?.systemPortName}")
             return true
         }
+        if (!sender.hasPermission("craft18.configure")) {
+            sender.sendMessage("Not permitted")
+            return true
+        }
         if (args.size > 1) {
             sender.sendMessage("Invalid command")
+            return true
+        }
+        if (args[0] == "list") {
+            val ports = SerialPort.getCommPorts().map { it.systemPortName }
+            sender.sendMessage("Serial ports: $ports")
             return true
         }
         Craft18Plugin.plugin.serial?.closePort()

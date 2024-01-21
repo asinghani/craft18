@@ -19,27 +19,26 @@ object LocationSerializer : KSerializer<Location> {
 
     override fun deserialize(decoder: Decoder): Location {
         val arr = decoder.decodeSerializableValue(delegateSerializer)
+        if (arr.size != 3) throw SerializationException("invalid Location")
         return Location(Bukkit.getWorlds()[0], arr[0].toDouble(), arr[1].toDouble(), arr[2].toDouble())
     }
 }
 
 @Serializable
-class Config {
-    var ports: Array<@Serializable(with = LocationSerializer::class) Location?> = arrayOfNulls(8)
-
+class Config(
+    var ports: Array<@Serializable(with = LocationSerializer::class) Location?> = arrayOfNulls(5)
+) {
     fun save() {
-        if (!Craft18Plugin.plugin.dataFolder.exists()) {
-            Craft18Plugin.plugin.dataFolder.mkdirs()
-        }
+        if (!Craft18Plugin.plugin.dataFolder.exists()) Craft18Plugin.plugin.dataFolder.mkdirs()
         Craft18Plugin.plugin.configFile.writeText(Craft18Plugin.json.encodeToString(this))
     }
 
     companion object {
         fun load(): Config {
-            if (!Craft18Plugin.plugin.configFile.exists()) {
-                return Config().also { it.save() }
-            }
-            return Craft18Plugin.json.decodeFromString(Craft18Plugin.plugin.configFile.readText())
+            return if (!Craft18Plugin.plugin.configFile.exists())
+                Config().also { it.save() } // default
+            else
+                Craft18Plugin.json.decodeFromString(Craft18Plugin.plugin.configFile.readText())
         }
     }
 }

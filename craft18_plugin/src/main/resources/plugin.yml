@@ -11,10 +11,8 @@ permissions:
 
 commands:
   port:
-    description: Set a Craft18 port to the selected block
-    usage: /port [0-7] [clear]
-    permission: craft18.configure
+    description: View/configure Craft18 redstone ports
+    usage: /port [0-4] [clear]
   serial:
-    description: Set the serial port for Craft18 interface
-    usage: /serial <port>|close
-    permission: craft18.configure
+    description: View/configure Craft18 serial port
+    usage: /serial [<port>]|close|list
