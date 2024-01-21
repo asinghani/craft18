@@ -2,19 +2,6 @@ Blocks we need to build: (LxH)
 
 
 
-laser cut remaining top plates / spacers
-finish soldering together base plate + arduino
-
-
-
-fill out project report form
-
-
-
-0.385 in / 5 = 0.077in
-
-
-
 btn height = 3.175mm + 2px = 7.9375mm ~= 7.9mm
 
 
@@ -49,8 +36,6 @@ account for screw head diameter as well
 repeater torch bottom hole
 1/8" x 1/8" x 0.2in
 
-
-all on glossy paper (also get like 10 or 15 extra sheets of the glossy paper)
 
 - iron door textures: 4
 - torch side textures: 90
